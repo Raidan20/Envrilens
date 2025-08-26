@@ -1125,7 +1125,7 @@ footer {
 
 /* Hero Section */
 .hero {
-    background: url('../files/images/hero_img3.jpg') no-repeat center center;
+    background: url('../files/images/hero_img.jpg') no-repeat center center;
     background-size: 110%; /* start slightly zoomed */
     color: var(--white);
     padding: 160px 0 100px;
