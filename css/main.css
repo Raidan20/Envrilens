@@ -1228,3 +1228,135 @@ footer {
 }
 
 
+
+
+
+
+/* Enhanced Approach Section */
+.enhanced-approach {
+    padding: 100px 0;
+    background: linear-gradient(to bottom, var(--white) 0%, var(--primary-light) 100%);
+}
+
+.approach-content {
+    display: grid;
+    gap: 50px;
+}
+
+.approach-main p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--secondary);
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+.approach-priorities {
+    margin-top: 40px;
+}
+
+.approach-priorities h3 {
+    color: var(--dark);
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.approach-priorities h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--primary);
+}
+
+.priorities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.priority-item {
+    background: var(--white);
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    align-items: flex-start;
+}
+
+.priority-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+.priority-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--primary-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.priority-icon i {
+    color: var(--primary);
+    font-size: 24px;
+}
+
+.priority-content h4 {
+    color: var(--dark);
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.priority-content p {
+    color: var(--secondary);
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .priorities-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .priority-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .priority-icon {
+        margin-right: 0;
+        margin-bottom: 15px;
+        align-self: center;
+    }
+    
+    .approach-main p {
+        text-align: left;
+    }
+}
+
+@media (max-width: 576px) {
+    .enhanced-approach {
+        padding: 80px 0;
+    }
+    
+    .approach-main p {
+        font-size: 16px;
+    }
+    
+    .priority-item {
+        padding: 20px;
+    }
+}
