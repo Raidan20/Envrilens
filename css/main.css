@@ -1180,6 +1180,10 @@ footer {
     color: var(--primary);
 }
 
+/* styling the icon image */
+#icon_img{
+    height: 32px;
+}
 
 /* Responsive adjustments for hero-only layout */
 @media (max-width: 768px) {
@@ -1203,17 +1207,23 @@ footer {
         font-size: 28px;
     }
     
-    .logo h1 {
-        color: var(--white);
-    }
     
     .logo span {
-        color: var(--primary-light);
+        color: var(--primary);
+    }
+
+    .hero {
+        padding: 60px 20px 20px; /* More padding at top for mobile header */
+        background-size: 300%;
+    }
+    
+    .hero::before {
+        background-size: 150% auto; /* Larger background for better coverage on mobile */
+    }
+
+    #icon_img{
+        height: 26px;
     }
 }
 
 
-/* styling the icon image */
-#icon_img{
-    height: 32px;
-}
